@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+.navHeader {
+    @apply flex justify-between items-center bg-gray-900 p-2 text-white;
+    
+    nav {
+        @apply flex gap-2;
+    }
+
+    a {
+        @apply uppercase;
+    }
+}
+
+.heroHeader{
+   @apply h-dvh bg-red-900 text-white flex justify-center items-center bg-[url(/img/pexels-photo-14183626.avif)] bg-linear-to-r from-cyan-500 to-blue-500 bg-no-repeat bg-cover;
+}
+
+
+main {
+    @apply m-[3rem];
+}
+
+.section1 {
+    > div {
+        @apply flex gap-4;
+        
+        > div {
+            @apply border border-2 border-red-500 bg-red-50 rounded-lg ;
+
+            > div img {
+            @apply h-[300px] border w-[100%];
+        }
+        > div p {
+            @apply px3
+        }
+        }
+        
+    }
+}
+
+/* npx @tailwindcss/cli -i ./assets/css/input.css -o ./assets/css/output.css --watch */
